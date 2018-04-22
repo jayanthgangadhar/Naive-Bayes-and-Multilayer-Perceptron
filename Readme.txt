@@ -1,0 +1,107 @@
+5.1)
+The code is run using python 2.7.12
+In order to run the code replace,
+-> pos_path and pos_test_path with the path of directory containing the postive training set and test set respectively.
+-> neg_path and neg_test_path with the path of directory containing the negative training set and test set respectively.
+
+The resultant metric scores will be printed on the console.
+
+
+5.2)
+Python version 3.5.2 is required to run the code and we require the package tensorflow, sklearn and numpy
+In order to run the code replace,
+-> pos_path and pos_test_path with the path of directory containing the postive training set and test set respectively.
+-> neg_path and neg_test_path with the path of directory containing the negative training set and test set respectively.
+Outputs:
+
+->MLP1:
+	Epoch: 0001 cost=0.003758673
+	Epoch: 0501 cost=0.000017035
+	Epoch: 1001 cost=0.000018783
+	Epoch: 1501 cost=0.000014133
+	Epoch: 2001 cost=0.000014226
+
+	Optimization Finished!
+	Accuracy: 0.509013
+	validation accuracy: 0.509013
+	Precision 0.470646372801
+	Recall 0.145182926829
+	f1_score 0.221911552262
+
+
+->MLP2:
+	Epoch: 0001 cost=0.000216443
+	Epoch: 0301 cost=0.000013781
+	Epoch: 0601 cost=0.000013782
+	Epoch: 0901 cost=0.000013781
+
+	Optimization Finished!
+	Accuracy: 0.51807
+	validation accuracy: 0.51807
+	Precision 0.501871384825
+	Recall 0.0899390243902
+	f1_score 0.152541496458
+
+->MLP3:
+	Epoch: 0001 cost=0.000065410
+	Epoch: 0201 cost=0.000014323
+	Epoch: 0401 cost=0.000014178
+
+	Optimization Finished!
+	Accuracy: 0.509042
+	validation accuracy: 0.509042
+	Precision 0.485575048733
+	Recall 0.303780487805
+	f1_score 0.373743435859
+
+-> MLP4:
+	Epoch: 0001 cost=0.000014559
+	Epoch: 0201 cost=0.000014180
+	Epoch: 0401 cost=0.000014088
+	Epoch: 0601 cost=0.000014043
+	Epoch: 0801 cost=0.000014010
+	Epoch: 1001 cost=0.000013982
+	Epoch: 1201 cost=0.000013958
+	Epoch: 1401 cost=0.000013937
+	Epoch: 1601 cost=0.000013920
+	Epoch: 1801 cost=0.000013904
+
+	Optimization Finished!
+	Accuracy: 0.492134
+	validation accuracy: 0.492134
+	Precision 0.47691002598
+	Recall 0.548475609756
+	f1_score 0.510195400017
+
+5.3
+Results from Naive Bayes:
+('PrecisionPos = ', 0.7833333333333333)
+('RecallPos = ', 0.8453237410071942)
+('PrecisionNeg = ', 0.8566666666666667)
+('RecallNeg = ', 0.8453237410071942)
+('F1Pos = ', 0.8131487889273357)
+('F1Neg = ', 0.8509574063376214)
+
+Best result from Multilayer perceptron
+Epoch: 0001 cost=0.000216443
+Epoch: 0301 cost=0.000013781
+Epoch: 0601 cost=0.000013782
+Epoch: 0901 cost=0.000013781
+Optimization Finished!
+Accuracy: 0.51807
+validation accuracy: 0.51807
+Precision 0.501871384825
+Recall 0.0899390243902
+f1_score 0.152541496458
+
+-We can see that Naive Bayes is better for our dataset as it has better accuracy metric values.
+
+-However, We may improve the precision by training more inputs and a better optimizer. 
+
+Reference:
+
+->https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/multilayer_perceptron.py
+
+
+
+
